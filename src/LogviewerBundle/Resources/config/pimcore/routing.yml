@@ -1,0 +1,4 @@
+_wgg_pimcore_bundle:
+    prefix: /admin
+    type: annotation
+    resource: "@WggLogviewerBundle/Controller/Admin/"

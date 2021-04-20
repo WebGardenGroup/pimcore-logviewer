@@ -1,0 +1,12 @@
+{
+  "license": "UNLICENSED",
+  "private": true,
+  "scripts": {
+    "lint": "eslint -c .eslintrc.js src/LogviewerBundle/Resources/public/js"
+  },
+  "author": "WebGarden",
+  "devDependencies": {
+    "eslint": "^7.22.0",
+    "eslint-config-standard": "^16.0.2"
+  }
+}

@@ -1,0 +1,9 @@
+.pimcore_icon_logviewer {
+    background-image: url(/bundles/wgglogviewer/img/logs-white.png);
+    background-size: contain;
+}
+
+.pimcore_icon_logviewer_color {
+    background-image: url(/bundles/wgglogviewer/img/logs-brown.png);
+    background-size: contain;
+}

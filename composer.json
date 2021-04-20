@@ -1,0 +1,47 @@
+{
+  "name": "wgg/pimcore-logviewer",
+  "type": "pimcore-bundle",
+  "license": "MIT",
+  "description": "Pimcore Usagelog Viewer Bundle",
+  "keywords": [
+    "pimcore",
+    "usagelog"
+  ],
+  "homepage": "https://github.com/WebGardenGroup/pimcore-logviewer",
+  "authors": [
+    {
+      "name": "Webgarden Developer",
+      "email": "developer+github@webgarden.eu",
+      "homepage": "https://webgarden.eu/",
+      "role": "Developer"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Wgg\\LogviewerBundle\\": "src/LogviewerBundle/"
+    }
+  },
+  "extra": {
+    "pimcore": {
+      "bundles": [
+        "Wgg\\LogviewerBundle\\WggLogviewerBundle"
+      ]
+    }
+  },
+  "require": {
+    "php": ">=7.4",
+    "ext-zlib": "*",
+    "pimcore/pimcore": "^6.8.0"
+  },
+  "require-dev": {
+    "phpstan/phpstan": "^0.12",
+    "phpstan/phpstan-symfony": "^0.12",
+    "friendsofphp/php-cs-fixer": "^2.18"
+  },
+  "scripts": {
+    "phpstan": [
+      "@composer install --prefer-dist --ignore-platform-reqs",
+      "phpstan analyse -c phpstan.neon"
+    ]
+  }
+}
