@@ -1,8 +1,8 @@
 # pimcore-logviewer
 Usagelog viewer for Pimcore admin interface
 
-[![Packagist](https://img.shields.io/packagist/v/wgg/pimcore-logviewer)](https://packagist.org/packages/wgg/pimcore-logviewer)
-[![Software License](https://img.shields.io/packagist/l/wgg/pimcore-logviewer)](LICENSE)
+[![Packagist](https://img.shields.io/packagist/v/wgg/pimcore-logviewer?style=flat-square)](https://packagist.org/packages/wgg/pimcore-logviewer)
+[![Software License](https://img.shields.io/packagist/l/wgg/pimcore-logviewer?style=flat-square)](LICENSE)
 
 #### Requirements
 
