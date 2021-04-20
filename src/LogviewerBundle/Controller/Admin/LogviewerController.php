@@ -65,6 +65,8 @@ class LogviewerController extends AdminController
      */
     public function tailAction(Request $request, string $filename): JsonResponse
     {
+        $this->checkPermission('logviewer.permission');
+
         $lastFetchedSize = $request->query->get('size', 0);
 
         return $this->json($this->getNewLines($filename, $lastFetchedSize));
