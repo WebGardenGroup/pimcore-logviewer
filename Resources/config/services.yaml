@@ -1,0 +1,8 @@
+services:
+    _defaults:
+        autowire: true
+        autoconfigure: true
+        public: true
+
+    Wgg\LogviewerBundle\Controller\AdminController:
+        tags: [ 'controller.service_arguments' ]

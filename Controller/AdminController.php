@@ -1,6 +1,6 @@
 <?php
 
-namespace Wgg\LogviewerBundle\Controller\Admin;
+namespace Wgg\LogviewerBundle\Controller;
 
 use function array_combine;
 use function array_merge;
@@ -14,7 +14,7 @@ use function gztell;
 use function is_file;
 use function is_readable;
 use function mb_substr;
-use Pimcore\Bundle\AdminBundle\Controller\AdminController;
+use Pimcore\Bundle\AdminBundle\Controller\AdminController as BaseAdminController;
 use Pimcore\Model\User;
 use function preg_replace;
 use Symfony\Component\Finder\Finder;
@@ -27,7 +27,7 @@ use function trim;
 /**
  * @Route(path="/logviewer", name="wgg_logviewer_")
  */
-class LogviewerController extends AdminController
+class AdminController extends BaseAdminController
 {
     /**
      * @Route(path="/filelist", name="filelist", defaults={ "format": "json" }, options={ "expose": true })
