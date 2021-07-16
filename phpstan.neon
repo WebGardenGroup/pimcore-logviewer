@@ -4,7 +4,10 @@ includes:
 parameters:
     level: 8
     paths:
-        - src
+        - .
     checkMissingIterableValueType: false
     bootstrapFiles:
         - vendor/pimcore/pimcore/stubs/dynamic-constants.php
+    excludePaths:
+        - vendor
+        - node_modules

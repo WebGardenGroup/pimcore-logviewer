@@ -18,8 +18,11 @@
   ],
   "autoload": {
     "psr-4": {
-      "Wgg\\LogviewerBundle\\": "src/LogviewerBundle/"
-    }
+      "Wgg\\LogviewerBundle\\": ""
+    },
+    "exclude-from-classmap": [
+      "/Tests/"
+    ]
   },
   "extra": {
     "pimcore": {
@@ -29,9 +32,9 @@
     }
   },
   "require": {
-    "php": ">=7.4",
+    "php": "^8.0",
     "ext-zlib": "*",
-    "pimcore/pimcore": "^6.8.0"
+    "pimcore/pimcore": "^10.0.0"
   },
   "require-dev": {
     "phpstan/phpstan": "^0.12",
@@ -42,6 +45,11 @@
     "phpstan": [
       "@composer install --prefer-dist --ignore-platform-reqs",
       "phpstan analyse -c phpstan.neon"
+    ]
+  },
+  "archive": {
+    "exclude": [
+      "/.github"
     ]
   }
 }

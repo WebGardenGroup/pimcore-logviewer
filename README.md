@@ -6,7 +6,7 @@ Usagelog viewer for Pimcore admin interface
 
 #### Requirements
 
-* Pimcore >= 6.8.0
+* Pimcore X (^10.0.0)
 
 ## Installation
 

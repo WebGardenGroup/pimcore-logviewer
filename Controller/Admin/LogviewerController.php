@@ -67,7 +67,7 @@ class LogviewerController extends AdminController
     {
         $this->checkPermission('logviewer.permission');
 
-        $lastFetchedSize = $request->query->get('size', 0);
+        $lastFetchedSize = $request->query->getInt('size', 0);
 
         return $this->json($this->getNewLines($filename, $lastFetchedSize));
     }

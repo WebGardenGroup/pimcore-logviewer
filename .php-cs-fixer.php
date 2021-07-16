@@ -23,5 +23,9 @@ return (new Config())
         Finder::create()
             ->ignoreDotFiles(true)
             ->ignoreVCS(true)
-            ->in(__DIR__.'/src')
+            ->in(__DIR__)
+            ->exclude([
+                'vendor',
+                'node_modules',
+            ])
     );
